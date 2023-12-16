@@ -1,0 +1,54 @@
+.hero {
+  background-color: $background;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 850px) {
+    padding-top: 50px;
+  }
+}
+
+.hero__badge {
+  margin-bottom: 11px;
+}
+
+.hero__title {
+  color: $text;
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 119px;
+  margin-bottom: 28px;
+
+  @include mediaTablet {
+      font-size: 76px;
+      line-height: 80px;
+  }
+
+  @include mediaPhone {
+    font-size: 56px;
+    line-height: 68px;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  color: $text;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 33px;
+  max-width: 510px;
+  margin-bottom: 20px;
+
+  @include mediaTablet {
+    font-size: 19px;
+}
+}
+
+.hero__button {
+}

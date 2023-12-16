@@ -1,0 +1,62 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: $background;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__logo {
+  z-index: 9;
+}
+
+.header__menu {
+  background-color: $background;
+}
+
+.header__burger {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+
+  @media screen and (max-width: 850px) {
+    display: block;
+  }
+}
+
+.header__burger span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: $text;
+  left: 5px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+
+.header__burger span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.header__burger span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header__burger.open span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header__burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.open span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}

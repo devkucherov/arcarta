@@ -1,0 +1,27 @@
+.features {
+  background: linear-gradient($background, $white);
+  
+}
+
+.features__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 497px);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  justify-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  padding-top: 130px;
+  padding-bottom: 70px;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(2, 420px);
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// .features__card {
+// }

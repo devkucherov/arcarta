@@ -1,0 +1,27 @@
+.badge {
+  
+}
+
+.badge__new {
+  color: $white;
+  background-color: $pink;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.badge__report {
+  color: #4D4D4D;
+  background-color: #F9EDE2;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  position: relative;
+  left: -12px;
+}

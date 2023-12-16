@@ -1,0 +1,36 @@
+.button {
+  border-radius: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+  padding: 14px 30px;
+  transition: all 0.3s ease-in-out;
+
+  // &:hover {
+  //   transform: scale(1.1);
+  // }
+}
+
+.button_brown {
+  background-color: $brown;
+  color: $white;
+  border: 2px solid $brown;
+
+  &:hover {
+    background-color: $white;
+    color: $brown;
+  }
+}
+
+.button_light {
+  background-color: #FFFAF2;
+  color: $text;
+  border: 2px solid #E1DED9;
+
+  &:hover {
+    background-color: #E1DED9;
+    color: #FFFAF2;
+  }
+}
