@@ -13,13 +13,14 @@
   gap: 30px;
 
   padding-top: 130px;
-  padding-bottom: 70px;
+  padding-bottom: 170px;
 
   @media (max-width: 1080px) {
     grid-template-columns: repeat(2, 420px);
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
+    padding-bottom: 70px;
   }
 }
 
